@@ -123,6 +123,10 @@ app_license = "[A"
 # 		"on_trash": "method"
 # 	}
 # }
+doc_events = {
+    "Supplier":"omion.omopn.docevents.supplier.create_vender_series"
+}
+
 
 # Scheduled Tasks
 # ---------------
