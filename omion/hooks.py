@@ -188,7 +188,11 @@ doc_events = {
 # ----------
 # before_job = ["omion.utils.before_job"]
 # after_job = ["omion.utils.after_job"]
-
+doc_events = {
+    "Sales Invoice": {
+            "before_naming": "omion.omopn.api.before_naming",
+        },
+}
 # User Data Protection
 # --------------------
 
