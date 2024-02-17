@@ -123,11 +123,6 @@ doctype_js = {"Supplier" : "public/js/supplier.js"}
 # 		"on_trash": "method"
 # 	}
 # }
-doc_events = {
-    "Supplier":{
-        "validate":"omion.omopn.docevents.supplier.create_vender_series"
-    }
-}
 
 
 # Scheduled Tasks
@@ -192,6 +187,9 @@ doc_events = {
     "Sales Invoice": {
             "before_naming": "omion.omopn.api.before_naming",
         },
+    "Supplier":{
+        "validate":"omion.api.create_vender_series"
+    }
 }
 # User Data Protection
 # --------------------
