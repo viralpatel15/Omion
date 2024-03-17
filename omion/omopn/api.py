@@ -32,3 +32,10 @@ def create_bank(self,method):
 		doc.custom_ifsc_code = self.custom_ifsc_code
 		doc.swift_code =  self.custom_swift_code
 		doc.save()
+	if self.custom_user:
+		supplier = frappe.db.sql(f""" Select name 
+									From `tabSupplier`
+									where custom_user = '{self.custom_user}'
+		""", as_dict=1)
+		self.party_type = "Supplier"
+		self.party = supplier[0].name
