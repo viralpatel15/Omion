@@ -189,6 +189,12 @@ doc_events = {
         },
     "Supplier":{
         "validate":"omion.api.create_vender_series"
+    },
+    "Address":{
+        'validate':"omion.omopn.api.set_address_link"
+    },
+    "Bank Account":{
+        'validate':"omion.omopn.api.create_bank"
     }
 }
 # User Data Protection

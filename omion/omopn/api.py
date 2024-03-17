@@ -12,3 +12,23 @@ def before_naming(self, method):
 		date = self.get("transaction_date") or self.get("posting_date") or  self.get("manufacturing_date") or self.get('date') or getdate()
 		fiscal = get_fiscal(date)
 		self.custom_fiscal = fiscal
+
+def set_address_link(self, method):
+	if self.custom_user:
+		supplier = frappe.db.sql(f""" Select name
+						From `tabSupplier`
+						Where custom_user = '{ self.custom_user }'
+		 """, as_dict = 1)
+		for row in supplier:
+			self.append('links',{
+				'link_doctype': 'Supplier',
+				'link_name':row.name
+			})
+
+def create_bank(self,method):
+	if self.bank and not frappe.db.exists("Bank", self.bank):
+		doc = frappe.new_doc('Bank')
+		doc.bank_name = self.bank
+		doc.custom_ifsc_code = self.custom_ifsc_code
+		doc.swift_code =  self.custom_swift_code
+		doc.save()

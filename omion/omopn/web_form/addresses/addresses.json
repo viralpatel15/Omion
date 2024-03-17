@@ -21,7 +21,7 @@
  "list_columns": [],
  "login_required": 1,
  "max_attachment_size": 0,
- "modified": "2024-03-17 15:16:14.272523",
+ "modified": "2024-03-17 15:46:49.508916",
  "modified_by": "Administrator",
  "module": "omopn",
  "name": "addresses",
@@ -100,11 +100,12 @@
   {
    "allow_read_on_all_link_options": 0,
    "fieldname": "state",
-   "fieldtype": "Data",
+   "fieldtype": "Select",
    "hidden": 0,
    "label": "State",
    "max_length": 0,
    "max_value": 0,
+   "options": "\nAndaman and Nicobar Islands\nAndhra Pradesh\nArunachal Pradesh\nAssam\nBihar\nChandigarh\nChhattisgarh\nDadra and Nagar Haveli and Daman and Diu\nDelhi\nGoa\nGujarat\nHaryana\nHimachal Pradesh\nJammu and Kashmir\nJharkhand\nKarnataka\nKerala\nLadakh\nLakshadweep Islands\nMadhya Pradesh\nMaharashtra\nManipur\nMeghalaya\nMizoram\nNagaland\nOdisha\nOther Countries\nOther Territory\nPuducherry\nPunjab\nRajasthan\nSikkim\nTamil Nadu\nTelangana\nTripura\nUttar Pradesh\nUttarakhand\nWest Bengal",
    "read_only": 0,
    "reqd": 0,
    "show_in_filter": 0
