@@ -10,6 +10,7 @@
  "amount_based_on_field": 0,
  "anonymous": 0,
  "apply_document_permissions": 0,
+ "client_script": "",
  "condition_json": "[]",
  "creation": "2016-06-24 15:50:33.196990",
  "doc_type": "Address",
@@ -20,7 +21,7 @@
  "list_columns": [],
  "login_required": 1,
  "max_attachment_size": 0,
- "modified": "2024-03-17 14:53:05.590946",
+ "modified": "2024-03-17 15:16:14.272523",
  "modified_by": "Administrator",
  "module": "omopn",
  "name": "addresses",
@@ -217,7 +218,7 @@
    "max_length": 0,
    "max_value": 0,
    "options": "User",
-   "read_only": 1,
+   "read_only": 0,
    "reqd": 0,
    "show_in_filter": 0
   }
